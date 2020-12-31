@@ -174,11 +174,12 @@ document.addEventListener("click", function(e){
      if  (e.target.className ==="checkboxReadStatus"){
          if (e.target.checked === true){
             myLibrary[e.target.parentElement.parentElement.id].read = "true"
+            localStorage.setItem("books", JSON.stringify(myLibrary))
 
          }
          else {
             myLibrary[e.target.parentElement.parentElement.id].read = "false"
-            console.log(e.target.parentElement.parentElement.id)
+            localStorage.setItem("books", JSON.stringify(myLibrary))
 
          }
          
