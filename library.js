@@ -45,9 +45,7 @@ function displayBooks(myLibrary){
         readstatuscheckbox = document.createElement("input")
         readstatuscheckbox.type = 'checkbox'
         readstatuscheckbox.classList.add("checkboxReadStatus")
-        if (book.read){
-            readstatuscheckbox.checked = "true"
-        }
+        readstatuscheckbox.checked = book.read
         newReadStatus.classList.add("checkboxReadStatusDiv")
 
         
