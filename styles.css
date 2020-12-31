@@ -1,0 +1,199 @@
+body {
+    font-family: montserrat;
+}
+
+.header{
+    
+    padding:20px;
+    font-family: montserrat;
+    
+    margin:auto;
+    text-align:center;
+    
+    
+}
+
+.h1{
+    
+    text-align: center;
+    
+
+}
+
+.instructions {
+    text-align: center;
+
+}
+
+
+#booktable{
+
+    font-family: montserrat;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 40px ;
+    
+    
+}
+
+td {
+
+    text-align: left;
+    padding: 5px;
+    height:30px
+
+}
+
+th {
+
+    text-align: left;
+    padding:8px;
+    min-width: 180px;
+    background:#57b0f3d0;
+    color:white;
+}
+
+/*
+tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+*/
+
+
+.tableborder{
+    border: 1px solid black;
+}
+
+.removeButtonDiv {
+    display: none;
+    background-color: white;
+}
+
+.removeButton{
+    border: none;
+    outline: none;
+    color: black;
+    background: white;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.removeButton:hover {
+    color:red;
+}
+
+.checkboxReadStatusDiv{
+    border: 1px solid black;
+
+}
+
+
+
+.addRemoveButtons {
+
+    position: fixed;
+    bottom: 5%;
+    right: 5%; 
+
+
+}
+
+#addBook {
+
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background: #1B98F5;
+
+
+
+}
+
+#addBook:hover {
+    background: #03203C;
+}
+
+#removeBook {
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    color: white;
+    background: #FF6263;
+}
+
+#removeBook:hover {
+    background: #B4161B;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+  /* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+  }
+
+  /* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-size: 15px;
+  }
+
+  label {
+      font-size:15px;
+      font-family: Roboto;
+  }
+
+  .bookForm{
+      padding:10px;
+      margin-top:30px;
+  }
+  
+  .bookSubmitButton{
+    padding:8px;
+  }

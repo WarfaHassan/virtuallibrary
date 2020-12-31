@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Library</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  
+
+
+</head>
+
+<body>
+    <div class="header">
+        <h1>My Virtual Library</h1>
+    </div>
+    <div class="instructions">
+        <p>Click on the buttons in the bottom right of the screen to add or remove books from your library.</p>
+    </div>
+    <div class="addRemoveButtons">
+        <button id="addBook">+</button>
+        <button id="removeBook">-</button>
+    </div>
+
+    <div class="booktableborder">
+        <table id="booktable">
+            <tr>
+                <th class="tableborder">Title</th>
+                <th class="tableborder">Author</th>
+                <th class="tableborder">Pages</th>
+                <th class="tableborder">Read</th>                    
+                
+            </tr>
+        </table>
+
+    
+
+
+
+        <div class="modal">
+            <div class="modal-content">
+                <div class="close">&times;</div>
+                <div class="bookForm">
+                    <form id="bookForm">
+                        <label for="bookTitle">Title</label><br>
+                        <input type="text" id="bookTitle" name="bookTitle" placeholder="Title of Book.."><br>
+                    
+                        <label for="bookAuthor">Author</label><br>
+                        <input type="text" id="bookAuthor" name="bookAuthor" placeholder="Author of Book.."><br>
+                    
+                        <label for="bookPages">Number of Pages</label><br>
+                        <input type="text" id="bookPages" name="bookPages" placeholder="Number of Pages.."><br>
+
+                        <label for="readStatus">Book Completed?</label><br>
+                        <input type="checkbox" id="readStatus" name="readStatus"><br><br>
+
+                        <button type='submit' form='bookForm' id='bookSubmitButton'>Add</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="library.js"></script>
+</body>
+</html>
